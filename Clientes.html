@@ -4,7 +4,11 @@
 <meta charset="utf-8">
 <title>Principal - Clientes</title>
 <link rel="stylesheet" type="text/css" href="css/General.css" media="screen">
-
+<script type="text/javascript">
+	function limpia(){
+		document.getElementById("id_producto").value="";
+	}
+</script>
 </head>
 
 <body>
@@ -33,7 +37,7 @@
         &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
         <input id="id_producto" type="text">
         &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
-        <input type="button" value="     Bucar    "  >
+        <input type="button" value="     Bucar    "  onClick="javascript:limpia();">
         <br>
         <br>
         <br>
@@ -88,7 +92,7 @@
         </table>
         <br>
         <br>
-        <input type="button" value=" Inserar "  >
+        <input type="button" value=" Inserar " onClick="javascript:abrirventana();" >
         &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
         <input type="button" value=" Modificar" onClick="javascript:alert('No se puede modificar este registro');">
         &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
@@ -103,5 +107,8 @@
   <!-- end .contenido --></div>
 </body>
 <script type="text/javascript">
-
+function abrirventana(){
+	 window.open("InsertaCliente.html","insertaCliente","width=800,height=600,menubar=no");
+}
+</script>
 </html>
