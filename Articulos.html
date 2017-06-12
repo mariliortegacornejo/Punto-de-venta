@@ -5,7 +5,12 @@
 <title>Principal - Articulos</title>
 <link rel="stylesheet" type="text/css" href="css/General.css" media="screen">
 
-
+<script type="text/javascript">
+	function limpia(){
+		document.getElementById("id_producto").value="";
+		document.getElementById("id_nombre").value="";	
+	}
+</script>
 </head>
 
 <body>
@@ -40,7 +45,7 @@
         Buscar por nombre de articulo</label> &zwnj; &zwnj; &zwnj; &zwnj;
         <input id="id_nombre" type="text">
         &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
-        <input type="button" value="     Bucar    "  >
+        <input type="button" value="     Bucar    "  onClick="javascript:limpia();">
         <br>
         <br>
         <br>
@@ -95,7 +100,7 @@
         </table>
         <br>
         <br>
-        <input type="button" value=" Inserar "  >
+        <input type="button" value=" Inserar " onClick="javascript:abrirventana();" >
         &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
         <input type="button" value=" Modificar" onClick="javascript:alert('No se puede modificar este registro');">
         &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
@@ -109,5 +114,9 @@
     
   <!-- end .contenido --></div>
 </body>
-
+<script type="text/javascript">
+function abrirventana(){
+	 window.open("InsertaArticulo.html","insertaCliente","width=800,height=600,menubar=no");
+}
+</script>
 </html>
