@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Principal - ventas</title>
+<link rel="stylesheet" type="text/css" href="css/General.css" media="screen">
+
+
+</head>
+
+<body>
+
+<div class="contenido">
+  <div class="izquierda">
+    <ul class="nav">
+      <li><a href="Ventas.html">Ventas</a></li>
+      <li><a href="Clientes.html">Clientes</a></li>
+      <li><a href="Articulos.html">Articulos</a></li>
+      <li><a href="Pedidos.html">Pedidos</a></li>
+    </ul>
+    En este apartado puedes realizar la venta de productos
+    <!-- end .izquierda --></div>
+    
+    <label class="titulo-ubicacion">Ventas...</label>
+   
+    <div id="formaGeneral">
+     Administrador 
+      &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+      <a href="Salida.html"> Salir </a>
+    <br>
+     <form>
+     	<label style="padding-left:50px">
+        Numero de producto
+        </label>
+        <input id="id_producto" type="text">
+         &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+        <input type="button" value="     Insertar    "  >
+        <br>
+        <br>
+        <center>
+        <table class="Table" id="producto">
+        	<thead >
+           		<tr>
+            		<th>No. Producto</th>
+                    <th>Nombre</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                    <th>Precio total</th>
+            	</tr>
+            </thead>
+            <tbody>
+                <tr>
+            		<th>18287321</th>
+                    <th>Desodorante para baño</th>
+                    <th>16.50</th>
+                    <th>1</th>
+                    <th>16.50</th>
+            	</tr>
+                 <tr>
+            		<th>12431223</th>
+                    <th>gel xtreme 700ml</th>
+                    <th>12.50</th>
+                    <th>1</th>
+                    <th>12.50</th>
+            	</tr>
+                 <tr>
+            		<th>24512421</th>
+                    <th>mayonesa maccornic 300ml</th>
+                    <th>9.75</th>
+                    <th>1</th>
+                    <th>9.75</th>
+            	</tr>
+                 <tr>
+            		<th>444321</th>
+                    <th>papel igenico regio</th>
+                    <th>4</th>
+                    <th>4</th>
+                    <th>16</th>
+            	</tr>
+                 <tr>
+            		<th>21123132</th>
+                    <th>Desodorante para baño</th>
+                    <th>225</th>
+                    <th>1</th>
+                    <th>225</th>
+            	</tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <input type="button" value="Realizar venta" onClick="javascript:alert('Venta realizada con exito');">
+       </center>
+        
+        
+     </form>
+    
+    </div>
+    
+  <!-- end .contenido --></div>
+</body>
+</html>

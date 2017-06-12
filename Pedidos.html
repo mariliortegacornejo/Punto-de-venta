@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Principal - Pedidos</title>
+<link rel="stylesheet" type="text/css" href="css/General.css" media="screen">
+
+
+</head>
+
+<body>
+
+<div class="contenido">
+  <div class="izquierda">
+    <ul class="nav">
+      <li><a href="Ventas.html">Ventas</a></li>
+      <li><a href="Clientes.html">Clientes</a></li>
+      <li><a href="Articulos.html">Articulos</a></li>
+      <li><a href="Pedidos.html">Pedidos</a></li>
+    </ul>
+    En este apartado estan disponibles todos los pedidos.<!-- end .izquierda --></div>
+    
+    <label class="titulo-ubicacion">Pedidos...</label>
+   
+    <div id="formaGeneral">
+     Administrador
+      &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+      <a href="Salida.html"> Salir </a>
+    <br>
+     <form action="InsertaPedido.html">
+     	<label style="padding-left:30px">
+        Buscar por numero de Pedido
+        </label>
+        &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+        <input id="id_pedido" type="text">
+        &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+        <input type="button" value="     Bucar    "  >
+        <br>
+        <br>
+        <br>
+        <center>
+        <table class="Table" id="pedido">
+        	<thead >
+           		<tr>
+            		<th>No. Pedido</th>
+                    <th>Direccion </th>
+                    <th>Fecha de pedido</th>
+                    <th>Nombre aticulo</th>
+                    <th>Cantidad</th>
+            	</tr>
+            </thead>
+            <tbody>
+                <tr>
+            		<th>P232111</th>
+                    <th>Gomez Farias #33</th>
+                    <th>25/08/2017</th>
+                    <th>Azucar</th>
+                    <th>2 costales</th>
+            	</tr>
+                 <tr>
+            		<th>P123432</th>
+                    <th>Tulipanes #44 </th>
+                    <th>13/09/2017</th>
+                    <th>Desechable</th>
+                    <th>5 tantos</th>
+            	</tr>
+                 <tr>
+            		<th>P934323</th>
+                    <th>Lago alberto #955</th>
+                    <th>05/08/2017</th>
+                    <th>Pan blanco</th>
+                    <th>40 piezas</th>
+            	</tr>
+                 <tr>
+            		<th>P234322</th>
+                    <th>Zaragosa #457</th>
+                    <th>29/08/2017</th>
+                    <th>azucar</th>
+                    <th>3 costales</th>
+            	</tr>
+                 <tr>
+            		<th>P234234</th>
+                    <th>Bento juarez #47</th>
+                    <th>31/11/2017</th>
+                    <th>cafe</th>
+                    <th>66 piezas</th>
+            	</tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <input type="button" value=" Inserar "  >
+        &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+        <input type="button" value=" Modificar" onClick="javascript:alert('No se puede modificar este registro');">
+        &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+        <input type="button" value=" Eliminar " onClick="javascript:alert('Eliminado con exito');">
+       </center>
+        
+
+     </form>
+    
+    </div>
+    
+  <!-- end .contenido --></div>
+</body>
+
+</html>

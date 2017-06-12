@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Principal - Clientes</title>
+<link rel="stylesheet" type="text/css" href="css/General.css" media="screen">
+
+</head>
+
+<body>
+
+<div class="contenido">
+  <div class="izquierda">
+    <ul class="nav">
+      <li><a href="Ventas.html">Ventas</a></li>
+      <li><a href="Clientes.html">Clientes</a></li>
+      <li><a href="Articulos.html">Articulos</a></li>
+      <li><a href="Pedidos.html">Pedidos</a></li>
+    </ul>
+    En este apartado podras gestionar los clientes.<!-- end .izquierda --></div>
+    
+    <label class="titulo-ubicacion">Clientes...</label>
+   
+    <div id="formaGeneral">
+     Administrador
+      &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+      <a href="Salida.html"> Salir </a>
+    <br>
+     <form action="InsertaCliente.html">
+     	<label style="padding-left:30px">
+        Buscar por numero de cliente 
+        </label>
+        &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+        <input id="id_producto" type="text">
+        &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+        <input type="button" value="     Bucar    "  >
+        <br>
+        <br>
+        <br>
+        <center>
+        <table class="Table" id="producto">
+        	<thead >
+           		<tr>
+            		<th>No. Cliente</th>
+                    <th>Nombre</th>
+                    <th>Direccion</th>
+                    <th>Saldo limite</th>
+                    <th>¿Desceuento?</th>
+            	</tr>
+            </thead>
+            <tbody>
+                <tr>
+            		<th>C123231</th>
+                    <th>Juan arturo campos</th>
+                    <th>Enrrique segobiano #20</th>
+                    <th>1,500</th>
+                    <th>no</th>
+            	</tr>
+                 <tr>
+            		<th>C132332</th>
+                    <th>Maria bermudez ruiz</th>
+                    <th>Mariano escobedo #3</th>
+                    <th>3,000</th>
+                    <th>si</th>
+            	</tr>
+                 <tr>
+            		<th>C432343</th>
+                    <th>Mario arredondo mciel</th>
+                    <th>Maelo ruiz #43</th>
+                    <th>2,500</th>
+                    <th>si</th>
+            	</tr>
+                 <tr>
+            		<th>C554452</th>
+                    <th>Arnoldo Jimenez Fail</th>
+                    <th>Gladeolas #94</th>
+                    <th>5,000</th>
+                    <th>si</th>
+            	</tr>
+                 <tr>
+            		<th>C232322</th>
+                    <th>Carmen Soliz Mu</th>
+                    <th>S/N</th>
+                    <th>500</th>
+                    <th>no</th>
+            	</tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <input type="button" value=" Inserar "  >
+        &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+        <input type="button" value=" Modificar" onClick="javascript:alert('No se puede modificar este registro');">
+        &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+        <input type="button" value=" Eliminar " onClick="javascript:alert('Eliminado con exito');">
+       </center>
+        
+
+     </form>
+    
+    </div>
+    
+  <!-- end .contenido --></div>
+</body>
+<script type="text/javascript">
+
+</html>
