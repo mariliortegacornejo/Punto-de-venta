@@ -1,6 +1,72 @@
 @charset "utf-8";
 /* CSS Document */
 
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 
+	padding-right: 15px;
+	padding-left: 15px;
+}
+a img {
+	border: none;
+}
+a:link {
+	color: #FFF;
+	text-decoration: underline; 
+}
+
+.contenido {
+	width: 80%;
+	max-width: 100%;
+	min-width: 90%;
+	background-color: #FFF;
+	margin: 0 auto; 
+	overflow: hidden;
+}
+.izquierda {
+	float: left;
+	width: 20%;
+	background: #282e33;
+	padding-bottom: 10px;
+}
+
+ul.nav li {
+	border-bottom: 1px solid #666;
+}
+ul.nav a, ul.nav a:visited { 
+	padding: 5px 5px 5px 15px;
+	display: block; 
+	text-decoration: none;
+	background-color: #8090AB;
+	background: #b5cd60;
+	color: #000;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { 
+	background-color: green;
+	color: #FFF;
+}
+.fltrt { 
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+/***********************************************************************/
+
+@charset "utf-8";
+
 
 [class*="enfasis-"]:before {
   font-family: 'enfasis', sans-serif;
@@ -34,7 +100,9 @@ after { clear: both; }
   margin: 50px auto;
   width: 320px;
 }
-
+#formaGeneral{
+	background:gray;
+}
 #login form {
   margin: auto;
   padding: 22px 22px 22px 22px;
@@ -44,7 +112,15 @@ after { clear: both; }
   border-top: 3px solid #434a52;
   border-bottom: 3px solid #434a52;
 }
-
+#formaGeneral form{
+ margin: auto;
+  padding: 22px 22px 22px 22px;
+  width: 100%;
+  border-radius: 5px;
+  background: #282e33;
+  border-top: 3px solid #434a52;
+  border-bottom: 3px solid #434a52;
+}
 #login form span {
   background-color: #363b41;
   border-radius: 3px 0px 0px 3px;
@@ -90,4 +166,4 @@ after { clear: both; }
 }
 #login form input[type="submit"]:hover {
   background: #16aa56;
-}
+}.
