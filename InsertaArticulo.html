@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inserta Articulo</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/General.css" media="screen">
+<body>
+	<label class="titulo-ubicacion">Inserta Articulo...</label>
+	<div id="login">
+      	<form name='formulario-inserta'  action="Articulos.html">
+       		<span class="enfasis-No.articulo"></span>	
+          	<input type="text" id="No." placeholder="No. de Articulo">
+            <span class="enfasis-Nombre"></span>	
+          	<input type="text" id="Nombre" placeholder="Nombe de Cliente">
+             <span class="enfasis-proveedor"></span>	
+          	<input type="text" id="direccion" placeholder="Proveedor">
+             <span class="enfasis-cantidad"></span>	
+          	<input type="text" id="cantidad" placeholder="Cantidad">
+             <span class="enfasis-descripcion"></span>	
+          	<input type="text" id="descripcion" placeholder="Descripcion">
+            
+       
+
+        
+        	<input type="submit" value="Insertar Articulo" onClick="javascript:inserta();">
+		</form>	
+	</div>	
+</body>
+<script type="text/javascript">
+function inserta(){
+	alert("cliente insertado exitosamente");
+	window.close();	
+}
+</script>
+</html>

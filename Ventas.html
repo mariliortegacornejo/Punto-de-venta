@@ -4,7 +4,11 @@
 <meta charset="utf-8">
 <title>Principal - ventas</title>
 <link rel="stylesheet" type="text/css" href="css/General.css" media="screen">
-
+<script type="text/javascript">
+	function limpia(){
+		document.getElementById("id_producto").value="";
+	}
+</script>
 
 </head>
 
@@ -34,7 +38,7 @@
         </label>
         <input id="id_producto" type="text">
          &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
-        <input type="button" value="     Insertar    "  >
+        <input type="button" value="     Insertar    "  onClick="javascript:limpia();">
         <br>
         <br>
         <center>

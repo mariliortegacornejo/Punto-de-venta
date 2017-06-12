@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inserta Pedido</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/General.css" media="screen">
+<body>
+	<label class="titulo-ubicacion">Inserta Pedido...</label>
+	<div id="login">
+      	<form name='formulario-inserta'  action="Cliente.html">
+       		<span class="enfasis-No.Pedido"></span>	
+          	<input type="text" id="No." placeholder="No. de Pedido">
+            <span class="enfasis-Nombre"></span>	
+          	<input type="text" id="direccion" placeholder="Direccion de entrega ">
+             <span class="enfasis-fecha"></span>	
+          	<input type="text" id="fecha" placeholder="Fecha de entrega">
+             <span class="enfasis-Nombre"></span>	
+          	<input type="text" id="Nombre" placeholder="Nombre de articulo a vender ">
+             <span class="enfasis-Cantidad"></span>	
+          	<input type="text" id="Cantidad" placeholder="Cantidad ">
+            
+       
+
+        
+        	<input type="submit" value="Insertar Pedido" onClick="javascript:inserta();">
+		</form>	
+	</div>
+</body>
+<script type="text/javascript">
+function inserta(){
+	alert("cliente insertado exitosamente");
+	window.close();	
+}
+</script>
+</html>
